@@ -1,0 +1,335 @@
+/* Reset default margin and padding for the page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a dark background to the header */
+.dark-header {
+    background-color: #6ee40d; /* Dark background color */
+    color: #14cedbf1; /* Text color */
+    padding: 15px 0; /* Add some spacing */
+}
+
+/* Center align the content within a container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo text */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #08f3dfa9;
+}
+
+/* Style the navigation menu */
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-right: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #0eebcdb9;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style the navigation links on hover */
+.main-menu a:hover {
+    border-bottom: 2px solid #0df1e6d5; /* Add an underline on hover */
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #99f309;
+        text-align: right;
+        z-index: 1;
+    }
+
+    .main-menu.open {
+        display: block;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+    }
+
+    .main-menu li {
+        margin: 10px 0;
+    }
+}
+/* The existing styles for the header as provided previously */
+
+/* Style the hero section */
+.hero {
+    background-image: url('hero-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #12e0cff3;
+}
+
+/* Style the hero content */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Style the Call to Action (CTA) button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600; /* Custom call-to-action button color */
+    color: #11ebbbe7;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65200; /* Darken the button color on hover */
+}
+/* The existing styles for the header and hero section as provided previously */
+
+/* Style the "About Us" section */
+.about-us {
+    background-color: #70ee09; /* Dark background color */
+    color: #0eeee3c2;
+    padding: 60px 0;
+}
+
+/* Style the "About Us" content */
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* The existing styles for the header, hero section, and "About Us" section as provided previously */
+
+/* Style the "Features" section */
+.features {
+    background-color: #88e70b; /* Dark background color */
+    color: #0be6e6ab;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Style the individual features */
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feature i {
+    font-size: 36px;
+    color: #ff6600; /* Icon color */
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 18px;
+}
+/* The existing styles for the header, hero section, "About Us" section, and "Features" section as provided previously */
+
+/* Style the "Services" section */
+.services {
+    background-color: #63ee06; /* Dark background color */
+    color: #07f1b7f3;
+    padding: 60px 0;
+}
+
+/* Style the "Services" content */
+.services .container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+}
+/* The existing styles for the header, hero section, "About Us" section, "Features" section, and "Services" section as provided previously */
+
+/* Style the "Pricing" section */
+.pricing {
+    background-color: #9ceb0a; /* Dark background color */
+    color: #0df0e4;
+    padding: 60px 0;
+}
+
+/* Style the "Pricing" content */
+.pricing .container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.price-card {
+    background-color: #7bf10d; /* Card background color */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.price-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+.price-card .cta-button {
+    display: block;
+    padding: 15px 30px;
+    background-color: #ff6600; /* Custom call-to-action button color */
+    color: #10ececf1;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.price-card .cta-button:hover {
+    background-color: #e65200; /* Darken the button color on hover */
+}
+/* The existing styles for the header, hero section, "About Us" section, "Features" section, "Services" section, and "Pricing" section as provided previously */
+
+/* Style the "Contact Information" section */
+.contact {
+    background-color: #5ff00c; /* Dark background color */
+    color: #11ebce;
+    padding: 60px 0;
+}
+
+/* Style the "Contact Information" content */
+.contact .container {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.contact-item i {
+    font-size: 36px;
+    color: #ff6600; /* Icon color */
+    margin-bottom: 20px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: #0fc9cf;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
